@@ -1,0 +1,106 @@
+/* ...existing code... */
+
+body {
+    background: linear-gradient(to bottom,#7F55B1, #F49BAB );
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1% 2%;
+
+    gap: 2vw;
+    flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
+}
+
+.nav-links-redes {
+    display: flex;
+    align-items: center;
+    color: black;
+    border: none;
+    background-color: #d3d3d3;
+    text-decoration: none;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    min-width: 120px;
+    box-sizing: border-box;
+}
+
+.Sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFD66B;
+    width: 80vw;
+    max-width: 900px;
+    min-width: 200px;
+    height: auto;
+    min-height: 300px;
+    margin: 2em auto;
+    gap: 1em;
+    font-family: sans-serif;
+    font-size: 2.5vw;
+    padding: 2em 1em;
+    box-sizing: border-box;
+    box-shadow: 0px -25px 15px rgba(0, 0, 0, 0.1);
+}
+
+.BotonInicio {
+    background-color: #A2C9F2;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Media query para tablets y móviles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 4vw 4vw;
+    }
+    .nav-links-redes {
+        width: 100%;
+        font-size: 1.2rem;
+        justify-content: flex-start;
+    }
+    .Sobre {
+        width: 96vw;
+        font-size: 1.2rem;
+        padding: 1em 0.5em;
+        min-height: 200px;
+    }
+}
+
+/* Media query para móviles pequeños */
+@media (max-width: 480px) {
+    .nav-links {
+        padding: 2vw 2vw;
+        gap: 0.5em;
+    }
+    .Sobre {
+        width: 100vw;
+        font-size: 1rem;
+        padding: 0.5em 0.2em;
+    }
+}
