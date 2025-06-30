@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make A Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>
 </head>
 <body>
     <header>
         <nav class="NavBar">
-            <div class="Anuncio">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6496666427634484"
-                crossorigin="anonymous"></script>
-            </div>
             <ul class="nav-links">
                 <li><button class="nav-links-redes" a href="">Redes</button></li>
                 <li><script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="kaynower0" data-color="#FFDD00" data-emoji=""  data-font="Lato" data-text="Apoyame" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script></li>
@@ -22,10 +22,30 @@
     </header>
     <main>
         <div class="Sobre">
-            <h1>Make a Card</h1>
-            <button class="BotonInicio CreaTuCarta">Crea Tu Carta</button>
-            <button class="BotonInicio Donaciones">Donaciones</button>
+            <h1>Make a <span>Card</span></h1>
+            <button type="button" class="btn btn-personalizado btn-primary btn-lg" style="background-color: #6610f2; color: white; border: none;">Crea tu Carta</button>
+            <button type="button" class="btn btn-personalizado btn-secondary btn-lg" style="background-color: #6f42c1; color: white; border: none;">Guia de uso</button>
+            <p class="aviso">Para que este sitio pueda ser completamente gratis se mostraran anuncions</p>
+        </div>
+
+        <div class="Guia">
+            <img src="☝️🤓.jpg" alt="" class="ImagenFondo">
+
+            <div class="Descripcion">
+                <h2>Imagina...</h2>
+                <p>personalizar cada detalle de la carta.</p>
+                <p>Modificar el mensaje con opciones para cambiar la fuente, tamaño, color y alineación.</p>
+                <p>También se pueden agregar emoticonos y stickers para hacer el mensaje más personal.</p>
+                <p>Carga sus propias fotos o elegir de una galería prediseñada para agregar a la carta.
+                <p>Las imágenes pueden redimensionarse y ajustarse según el diseño.</p>
+                <p>Agregar bordes, fondos, íconos y dibujos. 
+                <p>Estos elementos pueden ser redimensionados, rotados y recolocados para adaptarse al estilo de la carta.</p>
+                <p>Cambiar el esquema de colores de la carta, eligiendo tonos que se adapten a la ocasión.</p>
+            </div>
+            
         </div>
     </main>
+    <script src="Script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
