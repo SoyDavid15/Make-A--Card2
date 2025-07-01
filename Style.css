@@ -20,7 +20,7 @@ body{
     align-items:center;
     justify-content:space-around;
     flex-direction:row;
-    margin: auto 10%;
+    margin: 5% 10%;
     gap: 20%;
 }
 
@@ -67,5 +67,9 @@ p{
     .Pagina1{
         flex-direction: column;
         align-items: center;
+    }
+
+    img{
+        width: 50%;
     }
 }
