@@ -59,6 +59,17 @@ p{
     color: white;
 }
 
+.Pagina2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrusel{
+    min-width: none;
+    width: 900%;
+}
+
 @media  (max-width: 530px) {
     .nav-links{
         flex-direction: column;
