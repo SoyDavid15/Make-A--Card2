@@ -2,6 +2,9 @@
 const botonCrear = document.querySelector(".buttonCrear");
 const botonGuia = document.querySelector(".buttonGuia");
 const vistaPrevia = document.querySelector(".vista-previa");
+const botonplantilla1 = document.querySelector(".Plantilla1");
+const botonplantilla2 = document.querySelector(".Plantilla2");
+
 
 
 // --- Código para index.html ---
@@ -22,33 +25,14 @@ if (botonGuia) {
 // --- Código para page2.html ---
 
 // 1. Seleccionamos TODOS los elementos que tengan la clase .fondo-plantilla
-const todasLasPlantillas = document.querySelectorAll(".fondo-plantilla");
+const todasLasPlantillas = document.querySelectorAll(".elegirPlantilla");
 
-// 2. Si se encontraron elementos (si estamos en page2.html)...
+// `querySelectorAll` devuelve una NodeList. Debemos iterar sobre ella
+// para añadir el evento a CADA elemento.
 if (todasLasPlantillas.length > 0) {
-    // 3. ...recorremos cada uno de ellos.
     todasLasPlantillas.forEach(plantilla => {
-        // 4. A cada plantilla individual le añadimos un evento de clic.
         plantilla.addEventListener("click", function() {
-            const vistaprevia = document.createElement("div");
-            vistaprevia.classList.add("vistaprevia");
-            const contenedor = document.getElementById("vista-previa");
-            contenedor.appendChild(vistaprevia);
-            vistaprevia.textContent = "hola";
-
-            vistaPrevia.style.zIndex = "1000";
-            vistaPrevia.style.display = "flex";
-            vistaPrevia.style.justifyContent = "center";
-            vistaPrevia.style.alignItems = "center"
-            vistaPrevia.style.position = "fixed";
-            vistaPrevia.style.top = "50%";
-            vistaPrevia.style.left = "50%";
-            vistaPrevia.style.transform = "translate(-50%, -50%)";
-            vistaPrevia.style.backgroundColor = "rgb(83, 83, 83)";
-            vistaPrevia.style.borderRadius = "5px";
-            vistaPrevia.style.boxShadow = "10 10px 6px rgb(0, 0, 0)";
-            vistaPrevia.style.width = "70%";
-            vistaPrevia.style.height = "70%";
+            window.location.href = "CardSite.html";
         });
     });
 }
